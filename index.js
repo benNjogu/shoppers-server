@@ -13,6 +13,10 @@ app.use(cors());
 
 app.use("/posts", postRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Shoppers");
+});
+
 const CONNECTION_URL =
   "mongodb+srv://ben:ben123456@cluster0.s6dxw0m.mongodb.net/?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
