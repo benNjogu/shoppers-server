@@ -6,7 +6,7 @@ const postSchema = mongoose.Schema({
   price: String,
   discount: String,
   newPrice: String,
-  sponsored: String,
+  sponsored: Boolean,
   rating: String,
   images: String,
 });
