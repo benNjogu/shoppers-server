@@ -4,7 +4,6 @@ import mongoose from "mongoose";
 export const getPosts = async (req, res) => {
   try {
     const post = await Post.find();
-    console.log(post);
 
     res.status(200).json(post);
   } catch (error) {
@@ -15,7 +14,6 @@ export const getPosts = async (req, res) => {
 
 export const createPost = async (req, res) => {
   const post = req.body;
-  console.log(post);
   const newPost = new Post(post);
 
   try {
